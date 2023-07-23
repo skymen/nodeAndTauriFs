@@ -47,6 +47,10 @@ function readFile(file) {
   return fs.readFile(file, "utf8");
 }
 
+function readBinaryFile(file) {
+  return fs.readFile(file);
+}
+
 module.exports = {
   exists,
   readDir,
@@ -58,4 +62,5 @@ module.exports = {
   writeFile,
   copyFile,
   readFile,
+  readBinaryFile,
 };

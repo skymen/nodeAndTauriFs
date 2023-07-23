@@ -7,6 +7,7 @@ import {
   removeDir,
   removeFile,
   writeTextFile,
+  readBinaryFile,
 } from "@tauri-apps/api/fs";
 
 async function isDirectory(path) {
@@ -33,4 +34,5 @@ export default {
   writeFile: writeTextFile,
   copyFile,
   readFile: readTextFile,
+  readBinaryFile,
 };
